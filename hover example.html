@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Fixed Navigation</title>
+  <style>
+    
+    /* Basic Reset */
+    * {
+      margin: 0%;
+      padding: 0%;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      height: 2000px; /* Just for scroll demonstration */
+      display: flex;
+      margin-top: 200px;
+      background-color: bisque;
+      
+    }
+
+    /* /* Navigation Styles* */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: transparent;
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+      transition: background-color 0.3s, box-shadow 0.3s;
+      z-index: 1000;
+    }
+
+    nav.scrolled {
+      background-color: #333;
+      box-shadow: 0 2px 10px rgb(179, 177, 177)
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li {
+      color: rgba(211, 21, 21, 0.945);
+      font-weight: bold;
+      cursor: pointer;
+      padding: 10px 15px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    nav ul li:hover {
+      background-color: rgb(61, 59, 59);
+      color: rgb(247, 243, 243);
+      border-radius: 5px;
+    }
+  .para{
+      margin-left: 100px;
+      display: flex;
+    
+
+  }
+  </style>
+</head>
+<body>
+
+  <nav id="navbar">
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Services</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+        <p class="para">My name is Olamide Steven Morenikeji
+          I am an intern at ProdigyInfoTech
+        </p>
+  <script>
+    const navbar = document.getElementById('navbar');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
+
+</body>
+</html>
