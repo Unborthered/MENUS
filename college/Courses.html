@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+           <div style="position:flex;"><a href="index.html"><img src="https://i.pinimg.com/736x/6b/c0/3d/6bc03d1ac7631de27f8d690a530f4435.jpg" height="50px" width="50px" style="border-radius: 10px; opacity: 0.8;"></a>
+         <div style="left: 20px; color: rgb(238, 233, 233); font-size: 15px;"><h2 style="color: red;">Courses</h2>
+        </div></div>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="About.html">ABOUT</a></li>
+                <li><a href="Course.html">COURSE</a></li>
+                <li><a href="Blog.html">BLOG</a></li>
+                <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Courses We offer</h1>
+    </section> 
+
+     <!-- courses my tutorial offers -->
+    
+     <section class="course">
+        <h1>Courses we offer</h1>
+        <p>We offer vairieties of courses here in Stefnrc tutorial in Lautech, Ogbomosho.</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>In education, "intermediate courses" generally refers to a level of study that falls between basic or introductory courses and advanced courses.</p>
+            </div>
+            <div class="course-col">
+                <h3>Advanced</h3>
+                <p>In education, "intermediate courses" generally refers to a level of study that falls between basic or introductory courses and advanced courses.</p>
+            </div>
+            <div class="course-col">
+                <h3>Beginner</h3>
+                <p>In education, "intermediate courses" generally refers to a level of study that falls between basic or introductory courses and advanced courses.</p>
+            </div>
+        </div>
+    </section>
+
+        <!-- facilities -->
+        <section class="facilities">
+            <h1>Our Facilties</h1>
+            <p>This is a personal Project on my web developement progress. I decided to take on this project to know how i have been and what I have learnt so far</p>
+    
+            <div class="row">
+                <div class="facilities-col">
+                    <img src="hostel2.jpg">
+                        <h3>LONDON</h3>
+                        <p>This is a personal Project on my web developement progress. I decided to take on this project to know how i have been and what I have learnt so far</p>
+                </div>
+                <div class="facilities-col">
+                    <img src="hostel2.jpg">
+                        <h3>NEW YORK</h3>
+                        <p>This is a personal Project on my web developement progress. I decided to take on this project to know how i have been and what I have learnt so far</p>
+                </div>
+                <div class="facilities-col">
+                    <img src="hostel2.jpg">
+                        <h3>CANADA</h3>
+                        <p>This is a personal Project on my web developement progress. I decided to take on this project to know how i have been and what I have learnt so far</p>
+                </div>
+        </section>
+   
+<!-- --------------foooter section----------------- -->
+<section class="footer">
+    <h4>More About Us</h4>
+    <p>This is a footer sectionusing the footer attribute. I t contains our handle for our social media </p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-whatsapp"></i>
+    </div>
+    <p class="repo">This is the first project by Steven <i class="fa fa-heart"></i></p>
+    </div>
+</section>   
+   
+
+   
+   
+  
+   
+   <script>
+        var navLinks = document.getElementById("navLinks")
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

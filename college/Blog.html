@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+           <div style="position:flex;"><a href="index.html"><img src="https://i.pinimg.com/736x/6b/c0/3d/6bc03d1ac7631de27f8d690a530f4435.jpg" height="50px" width="50px" style="border-radius: 10px; opacity: 0.8;"></a>
+         <div style="left: 20px; color: rgb(238, 233, 233); font-size: 15px;"><h2 style="color: red;">About Us</h2>
+        </div></div>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="About.html">ABOUT</a></li>
+                <li><a href="Courses.html">COURSE</a></li>
+                <li><a href="Blog.html">BLOG</a></li>
+                <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Certificates & Online Programs for 2020</h1>
+    </section> 
+
+<!-- --------------blog page content------------- -->
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="C:\Codings\college\study pic1.jpg">
+            <h2>Our Certificates & Online Programs 2020</h2>
+            <p>This is a personal Project on my web developement progress. I decided to take on this project to know how i have been and what I have learnt so far. This is a personal Project on my web developement progress. I decided to take on this project to know how i have been and what I have learnt so far
+            <br>This is a personal Project on my web developement progress. I decided to take on this project to know how i have been and what I have learnt so far. This is a personal Project on my web developement progress. I decided to take on this project to know how i have been and what I have learnt so far</p>
+ 
+            
+            <div class="comment-box">
+                <h3>Leave a Comment</h3>
+                <form class="comment-form">
+                 <input type="text" placeholder="Enter Name">
+                 <input type="email" placeholder="Enter Email">
+                 <textarea rows="10" placeholder="Yoour Comment"></textarea>   
+                 <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                </form>
+            </div>
+
+
+        </div>
+        <div class="blog-right">
+            <h3>Post Categories</h3>
+            <div>
+                <span>Business Analytics</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Cyber Security</span>
+                <span>28</span>
+            </div>
+            <div>
+                <span>Computer Science</span>
+                <span>15</span>
+            </div>
+            <div>
+                <span>Information Science</span>
+                <span>34</span>
+            </div>
+            <div>
+                <span>Accounting</span>
+                <span>30</span>
+            </div>
+        </div>
+    </div>
+</section>
+   
+   
+  
+   <!-- --------------foooter section----------------- -->
+<section class="footer">
+    <h4>More About Us</h4>
+    <p>This is a footer sectionusing the footer attribute. I t contains our handle for our social media </p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-whatsapp"></i>
+    </div>
+    <p class="repo">This is the first project by Steven <i class="fa fa-heart"></i></p>
+    </div>
+</section>   
+   <script>
+        var navLinks = document.getElementById("navLinks")
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
